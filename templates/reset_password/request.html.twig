@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Reset your password{% endblock %}
+
+{% block body %}
+    <link href="{{asset('css/login.css')}}" rel="stylesheet" type="text/css">
+
+    <div class="container">
+        <div class="card card-login mx-auto text-center"  style="background-color: #E8FDFF   ">
+            <div class="card-header mx-auto"  style="background-color: #E8FDFF  ">
+                 <span> <img src="{{asset('img/pngwing.com.png')}}" class="w-75" alt="Logo"> </span><br/>
+                        <span class="logo_title mt-5" style="color: #04AD89  "> Reset your password </span>
+                        {% for flashError in app.flashes('reset_password_error') %}
+                            <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+                        {% endfor %}
+
+                         <div class="card-body">
+                            {{ form_start(requestForm) }}
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    {{ form_row(requestForm.email)}}
+                                    {{form_label(requestForm.email)}}
+                                <div>
+                                    <small style="color: #04AD89">
+                                        Enter your email address and we we will send you a
+                                        link to reset your password.
+                                    </small>
+                                </div>
+
+                                <div class="form-group">
+                                   <button  class="btn btn-outline-danger">Reset password</button>
+                                </div>
+
+                            {{ form_end(requestForm) }}
+                        </div>   
+            </div>
+        </div>
+    </div>
+    
+    
+
+   
+{% endblock %}
