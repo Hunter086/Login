@@ -5,7 +5,8 @@ body {
     border: 1px solid #04AD89;
 }
 .card-login {
-    margin-top: 130px;
+    margin-top: 20px;
+    
     padding: 18px;
     max-width: 30rem;
 }

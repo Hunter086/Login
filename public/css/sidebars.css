@@ -17,7 +17,6 @@ main {
   overflow-y: hidden;
 }
 .navbar{
-  height: 5rem;
 
 }
 
@@ -98,7 +97,7 @@ main {
 
 #navbarCollapse1{
   position: fixed;
-  width: 100%;
+
   
 }
 .nav-item{
