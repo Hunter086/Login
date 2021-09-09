@@ -87,48 +87,47 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1" aria-controls="navbarCollapse1" aria-expanded="false" aria-label="Toggle navigation1">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-           
+            <div class="text-aling-right">
+              <img src="{{asset('img/spotUnraf.png')}}" width="150" alt="SpotUNRaf">
+            </div>
           </div>
         </nav>
         <!-- Sidebar-->
         <div class="collapse navbar-collapse show"  id="navbarCollapse1" >
-          <div class="container-fluid"  >
-            <div class="row flex-nowrap ">
-              <div class="col-auto col-md-12 col-xl-12 px-sm-12 px-0 bg-dark" >
-                  <div class="container">
-                          <a href="/" class="d-flex align-items-center pb-4 mb-md-0 me-md-auto text-white text-decoration-none">
-                              <svg class="bi me-5" width="50" height="50"><use xlink:href="#bootstrap"/></svg><span class="fs-5 d-none d-sm-inline">Menu</span>
+                          <a href="/" class="btn  d-flex align-items-center  mb-md-0 me-md-auto text-white text-decoration-none">
+                              <img src="{{asset('img/logoUnraf.png')}}" width="32" height="32" alt="LogoUnraf"><span class="fs-5 d-none d-sm-inline">UNRaf</span>
                           </a>
-                          <ul class="nav nav-pills flex-column  text-white">
+                          <ul class="nav nav-pills flex-column align-content-center text-white ">
                               <li>
-                                  <div class="d-grid gap-2">
-                                    <button class="btn btn-outline-secondary " type="button">
+                                  <div class="d-grid gap-2 ">
+                                    <button class="btn btn-outline-warning " type="button">
                                       <h2 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#home"/></svg> 
                                       <span class="ms-1 d-none d-sm-inline t">Home</span></h2>
                                     </button>
                                   </div>
                               </li>
                               <li class="mt-3">
-                                    <div class="d-grid gap-2">
-                                      <button href="#submenu1" data-bs-toggle="collapse" class="btn btn-outline-secondary btn-2 ">
-                                          <h3 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#speedometer2"/><use xlink:href="#dashboard"/></svg>
-                                          <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                                          </h3> 
-                                      </button>
-                                    </div>
-                                  <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#submenu1">
+                                  <div class="d-grid gap-2">
+                                    <button href="#" class="btn btn-outline-warning " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <h3 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#speedometer2"/><use xlink:href="#dashboard"/></svg>
+                                        <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                        </h3> 
+                                    </button>
+                                  
+                                  
+                                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow"  data-bs-parent="#submenu2" id="submenu2" aria-labelledby="dropdownUser1">
                                       <li class="w-100 mt-2" id="nav-link">
                                           <a href="#" class="nav-link shadow"> <span class="d-none d-sm-inline">Item</span> 1</a>
                                       </li>
                                       <li id="nav-link">
                                           <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 2</a>
                                       </li>
-                                  </ul>
+                                  </ul> 
+                                  </div>
                               </li>
                               <li class="mt-3">
                                   <div class="d-grid gap-2">
-                                      <button href="#submenu2" class="btn btn-outline-secondary btn-2" >
+                                      <button href="#submenu2" class="btn btn-outline-warning btn-2" >
                                           <h3 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#orders"/>
                                           <svg class="bi" width="32" height="32"><use xlink:href="#table"/></svg> 
                                           <span class="ms-1 d-none d-sm-inline">Orders</span>
@@ -137,35 +136,33 @@
                                     </div>
                               </li>
                               <li class="mt-3">
-                                  <div class="d-grid gap-2">
-                                      <button href="#submenu3" data-bs-toggle="collapse" class="btn btn-outline-secondary">
-                                          <h3 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#grid">
-                                          <svg class="bi" width="32" height="32"><use xlink:href="#grid"/></svg> 
+                                <div class="d-grid gap-2">
+                                  <a href="#" class="btn btn-outline-warning" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <h3 class="nav-item">
+                                          <svg class="bi" width="32" height="32"><use xlink:href="#bootstrap"/></svg> 
                                           <span class="ms-1 d-none d-sm-inline">Bootstrap</span>
-                                          </h3> 
-                                      </button>
-                                    </div>
-                            
-                                  <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#submenu3">
-                                      <li class="w-100 mt-2" id="nav-link">
+                                        </h3> 
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow"  id="submenu3" data-bs-parent="#submenu3" aria-labelledby="dropdownUser1">
+                                        <li class="w-100 mt-2" id="nav-link">
                                           <a href="#" class="nav-link px-0 shadow"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                                      </li>
-                                      <li id="nav-link">
-                                          <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                      </li>
-                                  </ul>
+                                        </li>
+                                        <li id="nav-link">
+                                            <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                                        </li>
+                                    </ul>
+                                    </div>
                               </li>
                               <li class="mt-3">
-                                    <div class="d-grid gap-2">
-                                      <button href="#submenu4" data-bs-toggle="collapse" class="btn btn-outline-secondary btn-2 ">
-                                          <h3 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#grid"/>
-                                          <use xlink:href="#grid"/></svg>
+                                <div class="d-grid gap-2">
+                                    <a href="#" class="btn btn-outline-warning " id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <h3 class="nav-item">
+                                          <svg class="bi" width="32" height="32"><use xlink:href="#grid"/></svg>
                                           <span class="ms-1 d-none d-sm-inline">Products</span>
-                                          </h3> 
-                                      </button>
-                                    </div>
-                                  <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#submenu4">
-                                      <li class="w-100 mt-2" id="nav-link" >
+                                        </h3> 
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow"  id="submenu4" data-bs-parent="#submenu4" aria-labelledby="dropdownUser1">
+                                         <li class="w-100 mt-2" id="nav-link" >
                                           <a href="#" class="nav-link px-0  shadow"> <span class="d-none d-sm-inline">Item</span> 1</a>
                                       </li>
                                       <li id="nav-link">
@@ -177,16 +174,18 @@
                                       <li id="nav-link">
                                           <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
                                       </li>
-                                  </ul>
+                                    </ul>
+                                  </div>
                               </li>
                               
                               <li class="mt-3">
-                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-outline-secondary " type="button">
-                                      <h2 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#people-circle"/></svg> 
-                                      <span class="ms-1 d-none d-sm-inline t">Customes</span></h2>
-                                    </button>
-                                  </div>
+                                <div class="d-grid gap-2">
+                                      <button href="#submenu2" class="btn btn-outline-warning btn-2" >
+                                          <h3 class="nav-item"><svg class="bi" width="32" height="32"><use xlink:href="#people-circle"/></svg> 
+                                          <span class="ms-1 d-none d-sm-inline t">Customes</span>
+                                          </h3> 
+                                      </button>
+                                    </div>
                                
                               </li>
                                <li class="mt-5">
@@ -210,12 +209,8 @@
                               </li>
                               
                           </ul>
-                          <hr>
                          
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
         <main class="container">
           <div class="bg-light p-5 rounded">
@@ -224,6 +219,7 @@
             <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
           </div>
         </main>
+
         
         {% endblock %}
 
