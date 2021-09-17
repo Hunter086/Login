@@ -114,11 +114,11 @@ main {
  background-color: rgba(239, 192, 0, 0.95);
  
 }
-#submenu4, #submenu1, #submenu3{
+#submenu4, #submenu1,#submenu2, #submenu3{
   text-align: center;
 }
-#submenu4 a, #submenu1 a, #submenu3 a{
-  color: rgba(239, 192, 0, 0.95);
+#submenu4 a, #submenu1 a,#submenu2 a, #submenu3 a{
+  color: rgba(158, 158, 158, 0.95);
 }
 
 
